@@ -1,0 +1,28 @@
+{
+  "title": "SwitchBot API Quota",
+  "config": {
+    "step": {
+      "user": {
+        "title": "SwitchBot API quota",
+        "description": "Read the remaining-request header once per hour using an existing SwitchBot Cloud account. No credentials are copied.",
+        "data": {
+          "source_entry_id": "SwitchBot Cloud account"
+        }
+      }
+    },
+    "abort": {
+      "no_cloud_entry": "Configure SwitchBot Cloud first.",
+      "already_configured": "This account is already monitored."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "remaining": {
+        "name": "Remaining requests"
+      },
+      "last_increase": {
+        "name": "Last observed increase"
+      }
+    }
+  }
+}

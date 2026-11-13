@@ -1,0 +1,28 @@
+{
+  "title": "SwitchBot API残り回数",
+  "config": {
+    "step": {
+      "user": {
+        "title": "SwitchBot API残り回数",
+        "description": "既存のSwitchBot Cloud認証を使い、1時間ごとに残り回数を取得します。認証情報は複製しません。",
+        "data": {
+          "source_entry_id": "SwitchBot Cloudの登録"
+        }
+      }
+    },
+    "abort": {
+      "no_cloud_entry": "先にSwitchBot Cloudを設定してください。",
+      "already_configured": "このアカウントはすでに登録されています。"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "remaining": {
+        "name": "残り回数"
+      },
+      "last_increase": {
+        "name": "残数増加を観測した時刻"
+      }
+    }
+  }
+}
