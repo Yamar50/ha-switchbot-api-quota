@@ -48,7 +48,9 @@ entity names set by the user remain under HA's control.
 | `sensor.switchbot_api_last_increase` | Time at which a larger remaining count was first observed |
 
 Actual IDs may differ if you renamed them or monitor more than one Cloud entry.
-Names are translated into English and Japanese. The count unit is `回` in Japanese.
+Names are translated into English and Japanese. The count unit remains `回`
+(Japanese for a count of occurrences) in every language to preserve statistics
+compatibility with the original installation.
 
 Open the remaining-count sensor to see its history. It has
 `state_class: measurement`, so HA Recorder can keep long-term statistics when this

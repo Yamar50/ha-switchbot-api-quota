@@ -4,6 +4,9 @@
   "after_dependencies": [
     "switchbot_cloud"
   ],
+  "categories": [
+    "computers_network.cloud_developer_tools"
+  ],
   "codeowners": [
     "@Yamar50"
   ],
